@@ -157,7 +157,7 @@ class Render {
         $html .= $contents;
         
         // End tag
-        if (!empty($contents) || $contents === "") {
+        if (isset($contents)) {
             $html .= "</$tag>";
         }
         
